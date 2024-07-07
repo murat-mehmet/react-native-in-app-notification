@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Animated, StyleSheet, Image } from 'react-native';
 import DefaultNotificationBody from './DefaultNotificationBody';
+import {ImagePropTypes} from 'deprecated-react-native-prop-types';
 
 const styles = StyleSheet.create({
   notification: {
@@ -148,7 +149,7 @@ Notification.propTypes = {
     PropTypes.node,
     PropTypes.func,
   ]),
-  iconApp: Image.propTypes.source,
+  iconApp: ImagePropTypes.source,
   onShowing: PropTypes.func,
   onShown: PropTypes.func,
   onClosing: PropTypes.func,
