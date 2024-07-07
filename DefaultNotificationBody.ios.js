@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TouchableOpacity, StatusBar, View, Text, Image, Vibration } from 'react-native';
 import GestureRecognizer, { swipeDirections } from 'react-native-swipe-gestures';
+import {ImagePropTypes} from 'deprecated-react-native-prop-types';
 
 const styles = {
   root: {
@@ -137,8 +138,8 @@ DefaultNotificationBody.propTypes = {
   isOpen: PropTypes.bool,
   onPress: PropTypes.func,
   onClose: PropTypes.func,
-  iconApp: Image.propTypes.source,
-  icon: Image.propTypes.source,
+  iconApp: ImagePropTypes.source,
+  icon: ImagePropTypes.source,
 };
 
 DefaultNotificationBody.defaultProps = {
